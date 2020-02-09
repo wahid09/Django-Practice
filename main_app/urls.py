@@ -1,5 +1,10 @@
 from django.urls import path
 from . import views
 urlpatterns = [
-    path('', views.index, name='index')
+    path('', views.index, name='index'),
+    path('add_info/', views.add_info, name = 'add_info'),
+    path('create/', views.create, name='create' ),
+    path('delete/<id>/', views.delete, name='delete'),
+    path('edit/<id>/', views.edit, name='edit'),
+    path('update/<id>/', views.update, name='update'),
 ]
